@@ -1,0 +1,38 @@
+// Браузеры
+// Браузер Internet Explorer до версии 9.0 поддерживает только шрифты формата EOT (Embedded OpenType).
+// Opera в некоторых случаях может не показывать на веб-странице текст выбранным шрифтом, заменяя его стандартным. Причём для локальных документов всё работает корректно. Это происходит в тех случаях, когда имя пользователя в Windows написано кириллицей.
+/*---------------------------fonts-------------------------*
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("Montserrat-Bold.eot");
+  src: url("Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("Montserrat-Bold.ttf") format("truetype"), url("Montserrat-Bold.woff") format("woff"), url("Montserrat-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("Montserrat-Light.eot");
+  src: url("Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("Montserrat-Light.ttf") format("truetype"), url("Montserrat-Light.woff") format("woff"), url("Montserrat-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-LightItalic";
+  src: url("Montserrat-LightItalic.eot");
+  src: url("Montserrat-LightItalic.eot?#iefix") format("embedded-opentype"), url("Montserrat-LightItalic.ttf") format("truetype"), url("Montserrat-LightItalic.woff") format("woff"), url("Montserrat-LightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("Montserrat-Regular.eot");
+  src: url("Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("Montserrat-Regular.ttf") format("truetype"), url("Montserrat-Regular.woff") format("woff"), url("Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------------end of fonts------------------*/

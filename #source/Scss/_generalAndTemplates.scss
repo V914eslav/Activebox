@@ -1,0 +1,21 @@
+//templates
+$col1: #4e26fd;
+
+%hdr2 {
+	//headlines-h2
+	color: #000000;
+	//font-family: Roboto-M;
+	font-size: 80px;
+	font-weight: 400;
+}
+
+body {
+	background-color: #d0e0eb;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 35px;
+	margin: 0 auto;
+}
+//end of templates
