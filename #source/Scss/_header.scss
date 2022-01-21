@@ -1,0 +1,31 @@
+/*---------------------------header-------------------------*/
+// .header {
+//   padding: 35px 0;
+// }
+.header__body {
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #515369;
+}
+.nav__links {
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav__link {
+  margin-left: 50px;
+  color: #fff;
+  opacity: 0.75;
+  transition: opacity 0.1s linear;
+}
+.nav__link:first-child {
+  margin-left: 0;
+}
+.nav__link:hover {
+  opacity: 1;
+}
+
+/*----------------------------end of header------------------*/
