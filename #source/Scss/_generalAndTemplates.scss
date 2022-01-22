@@ -1,19 +1,9 @@
-//templates
-$col1: #4e26fd;
-
-%hdr2 {
-  //headlines-h2
-  color: #000000;
-  //font-family: Roboto-M;
-  font-size: 80px;
-  font-weight: 400;
-}
-
 body {
-  background-color: #d0e0eb;
+  background-color: #fff;
   font-family: "Raleway-Regular";
   font-size: 14px;
-  color: #6c7279;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -21,6 +11,6 @@ body {
   max-width: 1170px;
 
   margin: 0 auto;
-	padding: 0 35px;
+  padding: 0 35px;
 }
 //end of templates
