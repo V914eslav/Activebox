@@ -1,0 +1,30 @@
+.features {
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 95px 0;
+  }
+
+  &__item {
+    width: 33.33333%;
+    padding: 0 40px;
+    text-align: center;
+    color: #000;
+    margin: 25px 0;
+  }
+  &__icon {
+    margin: 0 0 25px;
+  }
+  &__title {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+  }
+}
