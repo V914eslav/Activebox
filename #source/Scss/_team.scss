@@ -1,0 +1,64 @@
+.team {
+  margin: 100px 0 70px;
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  &__item {
+    width: 25%;
+    padding: 0 15px;
+    margin: 0 0 30px;
+  }
+  &__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  &__name {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #2d3033;
+  }
+  &__prof {
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+    margin: 0 0 20px;
+  }
+}
+.social {
+  display: flex;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 4px 0 0;
+
+    border: 1px solid #e8ecee;
+    background-color: #fff;
+    transition: backgrround 0.1s linear;
+  }
+  &__item:hover {
+    background-color: #e8ecee;
+  }
+  &__item:hover &__icon {
+    fill: #000;
+  }
+  &__icon {
+    fill: #c6cacc;
+    display: block;
+    height: 18px;
+    transition: fill 0.1s linear;
+  }
+}
