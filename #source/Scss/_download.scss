@@ -1,0 +1,24 @@
+.download {
+  margin: 90px 0;
+  text-align: center;
+  &__title {
+    font-size: 28px;
+    line-height: 0.75px;
+    font-weight: 400;
+    color: #2d3033;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 1.8;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d3033;
+    margin-bottom: 25px;
+  }
+}
+.btn-download {
+  background-color: #e84545;
+  min-width: 280px;
+  text-align: center;
+}
