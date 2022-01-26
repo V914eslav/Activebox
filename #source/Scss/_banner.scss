@@ -11,7 +11,7 @@
   background: url("../img/banner/banner-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; // если писать все свойства вместе эта записб не будет поддерживаться в Mozila
 
   &__body {
     width: 100%;
@@ -60,4 +60,24 @@
 }
 .btn:hover {
   background-color: #dd3434;
+}
+@media (max-width: 1200px) {
+  .banner {
+    &__title {
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .banner {
+    height: auto;
+    padding: 130px 0 40px;
+    &__title {
+      font-size: 30px;
+    }
+    &__subtitle {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
 }
