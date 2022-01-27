@@ -28,3 +28,20 @@
     color: #6c7279;
   }
 }
+@media (max-width: 991px) {
+  .features {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .features {
+    margin: 40px 0;
+    &__item {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

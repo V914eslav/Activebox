@@ -66,3 +66,26 @@
     transition: fill 0.1s linear;
   }
 }
+@media (max-width: 991px) {
+  .team {
+    &__item {
+      text-align: center;
+      width: 50%;
+    }
+    &__photo {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .social {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .team {
+    margin: 60px 0 30px;
+    &__item {
+      width: 100%;
+    }
+  }
+}
