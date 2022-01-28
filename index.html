@@ -31,6 +31,8 @@
     <!-- <meta name="twitter:image" content="#"> -->
     <title>Activebox</title>
     <link rel="stylesheet" href="styles/style.css" />
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
   </head>
   <body>
     <!-- Sprite -->
@@ -83,7 +85,7 @@
       </symbol> -->
     </svg>
 
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__body">
           <div class="header__logo">
@@ -103,7 +105,7 @@
       </div>
     </header>
     <!-- banner -->
-    <div class="banner">
+    <div class="banner" id="banner">
       <div class="container">
         <div class="banner__body">
           <h1 class="banner__title">
@@ -500,5 +502,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

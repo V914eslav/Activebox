@@ -5,7 +5,19 @@
   top: 0;
   left: 0;
   z-index: 1000;
-
+  &.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #31344e;
+    background: url("../img/banner/banner-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .header__body {
+      padding: 20px 0;
+      border-bottom: 0;
+    }
+  }
   &__body {
     padding: 35px 0;
     display: flex;
@@ -14,6 +26,7 @@
     border-bottom: 1px solid #515369;
   }
 }
+
 .nav__links {
   display: flex;
   font-size: 13px;
