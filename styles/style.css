@@ -223,6 +223,26 @@ body {
 @media (max-width: 991px) {
   .nav__links {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: right;
+    background-color: #31344e;
+  }
+  .nav__links.show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__link {
+    padding: 9px 15px;
   }
   .burger {
     display: block;
