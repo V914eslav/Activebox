@@ -652,6 +652,15 @@ body {
   background-color: #53354a;
 }
 
+.reviews__slider {
+  overflow: hidden;
+  height: 500px;
+}
+
+.reviews .reviews__slider.slick-initialized {
+  height: auto;
+}
+
 .reviews__item {
   display: -webkit-box;
   display: -webkit-flex;
@@ -660,6 +669,7 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .reviews__photo {
@@ -730,7 +740,55 @@ body {
   }
 }
 
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0 0 10px;
+  list-style: none;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background: #fff;
+  opacity: 0.5;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+  color: transparent;
+}
+
+.slick-dots button:focus {
+  outline: 0;
+}
+
+.slick-dots .slick-active button {
+  opacity: 1;
+}
+
 @media (max-width: 991px) {
+  .reviews .slick-dots {
+    right: 25%;
+  }
   .reviews__content {
     font-size: 25px;
   }

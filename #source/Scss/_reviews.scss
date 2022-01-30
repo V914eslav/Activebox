@@ -1,9 +1,17 @@
 .reviews {
   overflow: hidden;
   background-color: #53354a;
+  &__slider {
+    overflow: hidden;
+    height: 500px;
+  }
+  .reviews__slider.slick-initialized {
+    height: auto;
+  }
   &__item {
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
   }
   &__photo {
     width: 50%;
@@ -58,8 +66,47 @@
     }
   }
 }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 10px;
+  list-style: none;
+
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  li {
+    margin: 0 5px;
+  }
+  button {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+  }
+  button:focus {
+    outline: 0;
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+}
 @media (max-width: 991px) {
   .reviews {
+    .slick-dots {
+      right: 25%;
+    }
     &__content {
       font-size: 25px;
     }

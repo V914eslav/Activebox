@@ -7,7 +7,7 @@ $(function () {
 
   checkScroll(scrollPos, bannerHeight);
 
-  $(window).on("scroll load resize", function () {
+  $(window).on("scroll resize", function () {
     bannerHeight = banner.innerHeight();
     scrollPos = $(this).scrollTop();
     checkScroll(scrollPos, bannerHeight);
@@ -20,6 +20,7 @@ $(function () {
       header.removeClass("fixed");
     }
   }
+  // Smooth scroll
   let nav = $("#nav");
   let navToggle = $("#navToggle");
   $("[data-scroll]").on("click", function (event) {
@@ -37,5 +38,16 @@ $(function () {
   navToggle.on("click", function (event) {
     event.preventDefault();
     nav.toggleClass("show");
+  });
+
+  // Reviews https://kenwheeler.github.io/slick/
+  let slider = $("#reviewsSlider");
+  slider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    dots: true,
   });
 });
